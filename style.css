@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    background-color: lightblue;
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+#shop {
+    display: flex;
+    justify-content: space-around;
+    height: 750px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.pkmnCard {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    padding: 5px; 
+    margin: 5px;
+    border: 1px solid red; 
+}
+
+img {
+    border: 1px solid black; 
+    height: 400px; 
+    margin: 5px;
+    padding: 5px; 
+}
