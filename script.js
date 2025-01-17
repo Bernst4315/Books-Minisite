@@ -19,6 +19,7 @@ function createShopItem(num = 1){
         image.id = `img${i + 1}`;
         text.id = `txt${i + 1}`;
         price.id = `price${i + 1}`;
+        price.className = "cardPrice"
 
         shop.appendChild(shopItem);
         shopItem.appendChild(image);
@@ -32,15 +33,6 @@ function createShopItem(num = 1){
 
 let totalNum = createShopItem(3);
 
-
-// const pkmnCardImg1 = document.getElementById("img1")
-// const pkmnCardImg2 = document.getElementById("img2")
-// const pkmnCardImg3 = document.getElementById("img3")
-
-// const Card1 = document.getElementById("card1")
-// const Card2 = document.getElementById("card2")
-// const Card3 = document.getElementById("card3")
-
 const pkmnCards =[]; 
 
 async function getPokeCard(){
@@ -50,18 +42,8 @@ async function getPokeCard(){
     pkmnCards.push(jsonData.data[223])
     pkmnCards.push(jsonData.data[244])
     pkmnCards.push(jsonData.data[137])
-    
-    // pkmnCardImg1.src = pkmnCards[0].images.small;
-    // pkmnCardImg2.src = pkmnCards[1].images.small;
-    // pkmnCardImg3.src = pkmnCards[2].images.small;
-
-    // const text = document.createElement("p")
-    // text = pkmnCards[0].flavorText;
-    // card1.appendChild(text);
-    // card2.appendChild(pkmnCards[1].flavorText);
-    // card3.appendChild(pkmnCards[2].flavorText);
      
-    console.log(jsonData.data[137].cardmarket.prices.averageSellPrice);
+    console.log(jsonData.data);
     console.log(pkmnCards);
     
     pkmnCards.forEach((card, idx) => {
@@ -80,7 +62,5 @@ getPokeCard();
 console.log(pkmnCards);
 console.log(totalNum);
 
-//let url = pkmnCards[0];
-//console.log(url);
 
 
