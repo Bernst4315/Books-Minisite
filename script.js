@@ -10,21 +10,24 @@ createShopItem()
 
 let totalNum = createShopItem(3);
 const pkmnCards =[]; 
-const allPkmnCards = getPokeCard();
+
 getPokeCard();
+const allPkmnCards = getPokeCard();
 
 searchBtn.addEventListener("click", ()=> {
-    console.log("click")
-//     // console.log(allPkmnCards);
-//     // allPkmnCards.forEach((card) => {
-//     //     if(card.types[0] === "Grass"){
-//     //         let text = document.createElement("p");
-//     //         text.textContent = card.types[0];
-//     //         searchResults.appendChild(text);
-//     //     }
-//     // }) //this block of code is trying to loop through array of obj to grab all the ones that have the searched for type
-//     //(currently hardcoded) and make a list of results in the HTML
-//     //would eventually try to make it work via user input
+    console.log("click") 
+    console.log(allPkmnCards); //seems like this is stuck within a promise
+
+    // allPkmnCards.forEach((card) => {
+    //     if(card.types[0] === "Grass"){
+    //         let text = document.createElement("p");
+    //         text.textContent = card.name;
+    //         searchResults.appendChild(text);
+    //     }
+    // })
+     //this block of code is trying to loop through array of obj to grab all the ones that have the searched for type
+    //(currently hardcoded) and make a list of results in the HTML
+    //would eventually try to make it work via user input
  })
 
 

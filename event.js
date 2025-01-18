@@ -9,8 +9,8 @@ export async function getPokeCard(){
     pkmnCards.push(jsonData.data[244])
     pkmnCards.push(jsonData.data[137])
     
-    console.log(jsonData.data);
-    console.log(pkmnCards);
+    // console.log(jsonData.data);
+    // console.log(pkmnCards);
     
     pkmnCards.forEach((card, idx) => {
         const cardImg = document.getElementById(`img${idx + 1}`);
@@ -23,12 +23,12 @@ export async function getPokeCard(){
     })
 
     
-    let text = document.createElement("p");
-    text.textContent = jsonData.data[223].types[0];
-    searchResults.appendChild(text);
+    // let text = document.createElement("p");
+    // text.textContent = jsonData.data[223].types[0];
+    // searchResults.appendChild(text);
 
     //searchByType(allPkmnCards, "Grass")  
-    console.log(`type ${jsonData.data[223].types[0]}`)
+    //console.log(`type ${jsonData.data[223].types[0]}`)
     
     return jsonData.data;
     
